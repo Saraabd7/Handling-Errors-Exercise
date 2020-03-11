@@ -16,8 +16,8 @@
 > 1 - Nachos
 > 2 - Diet Coke
 ``` 
-As a user, if I try to read a order that doesn't exist it should give me an error. 
-As a user I should be able to amend my order :) 
+- As a user, if I try to read a order that doesn't exist it should give me an error.
+- As a user I should be able to amend my order :) 
 
 ## DOD 
 - It is an own project
