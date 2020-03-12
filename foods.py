@@ -19,8 +19,9 @@ def open_file(name_file):
 def open_and_write(foods):
 
     try:
-        with open('foods.txt', 'w') as order_foods:
-           order_foods.write(foods)
+        with open('foods.txt', 'a') as order_foods:
+            # use forwad slash n to creat new lines when e write
+            order_foods.write(f"{foods} \n")
     except FileNotFoundError as error:
         print('check your file')
         print(error)
@@ -30,4 +31,14 @@ def open_and_write(foods):
 
 
 
+def open_and_read(corona):
+
+    try:
+        with open(corona , 'r') as order_foods:
+            list_food = order_foods.readlines() # --> list
+            return list_food
+
+
+    except FileNotFoundError as error:
+        print('Check your file')
 
